@@ -3,7 +3,7 @@
 $(document).ready(function() {
     "use strict";
     $("#countdown").countdown({
-        date: "17 December 2016 13:00:00", /** Enter new date here **/
+        date: "17 December 2017 13:00:00", /** Enter new date here **/
         format: "on"
     },
     function() {
