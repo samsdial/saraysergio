@@ -1,0 +1,173 @@
+extends ./base/layout.jade
+
+block vars
+    - var title='Nuestra Boda'
+    - var description='Sitio web Sara y Sergio'
+    - var abstract='boda, sara, sergio'
+    - var keywords='boda, sara, sergio'
+    - var url='http://www.saraysergio.com'
+    - var image=''
+    - var canonical=''
+    - var shortlink='http://www.saraysergio.com'
+
+block content
+    section.bgc--blue.pd_box--6em
+        .container-fluid
+            .row
+                #countdown.col-xs-12.text-center
+                    #countdowncont
+                        ul.countscript.list-inline.list_count
+                            li
+                                span.days 00
+                                p Días
+                            li
+                                span.hours 00
+                                p Horas
+                            li
+                                span.minutes 00
+                                p Minutos
+                            li
+                                span.seconds 00
+                                p Segundos
+    section.bgc--bluelight.pd_box--3em
+        .container
+            .row
+                .col-xs-12.cl--white.text-center
+                    p <b>¡Completa el formulario!</b> <br>  Más abajo ingresa tus datos de contacto, tu nombre y el de los familiares o pareja que te acompañarán...
+                .col-xs-12.cl--white.text-center
+                    h2.txt_size--x35 ¡Y no olvides confirmar tu asistencia!
+    section.bgc--bluelight
+        .container
+            .row
+                .col-xs-12
+                    .morph-button.morph-button-overlay.morph-button-fixed
+                        button(type="button") Confirmar
+                        .morph-content
+                            div
+                                .row.bgc_rgba--black.pd_box--6em
+                                    .col-xs-12.text-center.mg_bottom--x10
+                                        h2.cl--white
+                                            b Confirma tu asistencia.
+                                    .col-xs-12.text-center
+                                        i.icon.icon-close.txt_size--x45.cl--white
+                                .container.content-style-overlay
+                                    .row
+                                        .col-xs-12
+                                            form#theForm.simform(autocomplete="off")
+                                                .simform-inner
+                                                    ol.questions
+                                                        li
+                                                            span
+                                                                label.cl--blue(for="q1") Recuérdanos tu nombre
+                                                                input.q1(name="q1", type="text")
+                                                        li
+                                                            span
+                                                                label.cl--blue(for="q2") Número de acompañantes
+                                                                input.q2(name="q2", type="text")
+                                                        li
+                                                            span
+                                                                label.cl--blue(for="q3") Celular
+                                                                input.q3(name="q3", type="text")
+                                                        li
+                                                            span
+                                                                label.cl--blue(for="q4") Email
+                                                                input.q4(name="q4", type="email")
+                                                    button.submit(type="submit") Confirmar
+                                                    .controls
+                                                        button.next
+                                                        .progress
+                                                        span.number
+                                                            span.number-current
+                                                            span.number-total
+                                                        span.error-message
+                                                .final-message.cl--blue
+    section.bgi_section.pd_box--6em
+        .container
+            .row
+                .col-xs-12.text-center.mg_bottom--x10
+                    span.inblock.mg_left--x10.mg_right--x10.mg_bottom--x10
+                        a(href="https://www.instagram.com/noscasamos.saraysergio/", target="_blank")
+                            span.cube.circle.bgc--white.bdr_line--gold.pd_box_cube--04em.mg_bottom--x10
+                                i.icon-Instagram.cl--gold.txt_size--x45
+                        a(href="https://www.instagram.com/explore/tags/sara&sergio/", target="_blank")
+                            h3 #sara&sergio
+                        a(href="https://www.instagram.com/explore/tags/SSEstánDecididos/", target="_blank")
+                            h3 #SSEstánDecididos
+                    h4 Y por esta razón queremos que juntos creemos un buen recuerdo del momento <br> importante que estamos por vivir.
+                .col-xs-12.text-center
+                    h3.cl--gold Monta una foto en tu instagram de este día especial <br> y no olvides usar #sara&sergio #SSEstánDecididos.
+    section#photostack-2.photostack.photostack-start
+        div
+            figure
+                a.photostack-img(href="")
+                    img(src="/images/item/example.jpg")
+                    figcaption
+                        h2.photostack-title Texto de prueba
+                        .photostack-back
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            figure
+                a.photostack-img(href="")
+                    img(src="/images/item/example.jpg")
+                    figcaption
+                        h2.photostack-title Texto de prueba
+                        .photostack-back
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            figure
+                a.photostack-img(href="")
+                    img(src="/images/item/example.jpg")
+                    figcaption
+                        h2.photostack-title Texto de prueba
+                        .photostack-back
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            figure
+                a.photostack-img(href="")
+                    img(src="/images/item/example.jpg")
+                    figcaption
+                        h2.photostack-title Texto de prueba
+                        .photostack-back
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            figure
+                a.photostack-img(href="")
+                    img(src="/images/item/example.jpg")
+                    figcaption
+                        h2.photostack-title Texto de prueba
+                        .photostack-back
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    section.bgi_section.pd_box--6em
+        .container
+            .row
+                .col-sm-6.col-xs-12.text-center
+                    .box_reception.pd_box--3em.bgc--white.bdr_top--gold
+                        .title.mg_bottom--x20.cl--gold
+                            h3.txt_size--x35.cl--blue.txt_upper Recepción
+                            span.txt_size--x20.icon-line
+                        .content.cl--blue.mg_bottom--x10
+                            h4 Salón Real
+                            p Eventos casa Rincón
+                            small Frente a la estación TM Comuneros
+                            hr.hr.hr_site.hr_middle.hr_bgc--gold.mg_bottom--x20.mg_top--x20
+                            p
+                                b Av. Carrera 30 Nº 4 - 11
+                        .content-hours.cl--gold
+                            h3.txt_size--x35.txt_upper
+                                b 7:30 p.m.
+                .col-sm-6.col-xs-12.text-center
+                    .box_ceremony.pd_box--3em.bgc--white.bdr_top--gold
+                        .title.mg_bottom--x20.cl--gold
+                            h3.txt_size--x35.cl--blue.txt_upper Ceremonia
+                            span.txt_size--x20.icon-line
+                        .content.cl--blue.mg_bottom--x10
+                            h4 Parroquia
+                            p Santa Monica
+                            small Capilla de Santa María de los Ángeles
+                            hr.hr.hr_site.hr_middle.hr_bgc--gold.mg_bottom--x20.mg_top--x20
+                            p
+                                b Calle 79 B Nº 7 - 52
+                        .content-hours.cl--gold
+                            h3.txt_size--x35.txt_upper
+                                b 3:30 p.m.
+    section.container-full.mapa_site
+        .row
+            .col-xs-12.box-mapa
+                .overlay
+                #map

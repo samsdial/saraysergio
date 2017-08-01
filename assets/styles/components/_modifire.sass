@@ -1,0 +1,141 @@
+// Text
+.txt
+    &_arvo
+        font-family: $second-font
+        h1, h2, h3, h4, h5, h6, p
+            font-family: $second-font
+    &_spacing
+        letter-spacing: 8px
+    &_upper
+        text-transform: uppercase
+    &_size
+        &--x
+            &20
+                font-size: 20px
+            &30
+                font-size: 30px
+            &35
+                font-size: 35px
+            &45
+                font-size: 45px
+// colores
+.cl
+    &--blue
+        color: $blue
+        h1, h2, h3, h4, h5, h6, p
+            color: $blue
+    &--gold
+        color: $gold
+        h1, h2, h3, h4, h5, h6, p
+            color: $gold
+    &--white
+        color: $white
+        h1, h2, h3, h4, h5, h6, p
+            color: $white
+    &--gray
+        color: $gray
+        h1, h2, h3, h4, h5, h6, p
+            color: $gray
+
+.bgc
+    &--blue
+        background-color: $blue
+    &--bluelight
+        background-color: $bluelight
+    &--white
+        background-color: $white
+    &_rgba
+        &--black
+            background-color: rgba($black, 0.4)
+.bgi
+    &_section
+        background-image: url("/images/bg--section.png")
+.bdr
+    &_line
+        &--gold
+            border: 2px solid $gold
+.pd
+    &_box
+        &--3em
+            padding: 3em 0px
+        &--6em
+            padding: 6em 0px
+        &_cube
+            &--06em
+                padding: 0.6em
+            &--04em
+                padding: .4em .3em
+            &--02em
+                padding: .2em .3em
+    &_top
+        &--x
+            &10
+                padding-top: 10px
+    &_bottom
+        &--x
+            &10
+                padding-top: 10px
+.mg
+    &_bottom
+        &--x
+            &10
+                margin-bottom: 10px
+            &20
+                margin-bottom: 20px
+            &50
+                margin-bottom: 50px
+    &_top
+        &--x
+            &10
+                margin-top: 10px
+            &20
+                margin-top: 20px
+            &50
+                margin-top: 50px
+    &_left
+        &--x
+            &10
+                margin-left: 10px
+    &_right
+        &--x
+            &10
+                margin-right: 10px
+// Mapas
+#map
+    height: 300px
+.overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 2
+    background-color: rgba($blue, .7)
+// line (hr)
+.hr
+    display: block
+    border: none
+    &_full
+        width: 100%
+    &_middle
+        width: 50%
+    &_site
+        height: 2px
+        // margin: 0px
+    &_bgc
+        &--gold
+            background-color: $gold
+        &--blue
+            background-color: $blue
+.cube
+    width: 60px
+    height: 60px
+    display: inline-block
+.circle
+    border-radius: 50%
+.bdr
+    &_top
+        &--gold
+            border-top: 5px solid $gold
+.block
+    display: block
+.inblock
+    display: inline-block
